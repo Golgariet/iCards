@@ -1,5 +1,22 @@
 :root {
-    ### Primary
 
-    
+    --color-primary-700: hsl(300, 43%, 22%);
+    --color-primary-300: hsl(333, 80%, 67%)
+
+    --color-neutral-100: hsl(303, 10%, 53%)
+    --color-neutral-200: hsl(300, 24%, 96%)
+    --color-neutral-300: hsl(0, 0%, 100%)
+
+    --ff-primary: 'spartan', sans-serif;
+
+    --fs-base-400: .8125rem;
+    --fs-base-500: .9625rem;
+    --fs-base-900: 2rem;
+
+    @media (min-width: 50rem) {
+        --fs-400: .9625;
+        --fs-base-500: 2rem;
+        --fs-base-900: 3rem;
+    }
+
 }
