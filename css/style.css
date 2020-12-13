@@ -92,8 +92,9 @@ h1 {
     --ff-primary: 'spartan', sans-serif;
   --fs-base-400: .8125rem;
   --fs-base-500: .9625rem;
-  --fs-base-900: 2rem; }
-  @media (min-width: 50rem) {
+  --fs-base-900: 2rem;
+  --border-radius: .5rem; }
+  @media (min-width: 50em) {
     :root {
       --fs-base-900: 3rem; } }
 
@@ -102,5 +103,28 @@ h1 {
   padding: 0 2em;
   margin: 0 auto; }
 
+.flow-content > * + * {
+  margin-top: var(--flow-space, 1rem); }
+
+.quotes blockquote {
+  background: var(--color-primary-700);
+  color: var(--color-neutral-200);
+  text-align: left;
+  border-radius: var(--border-radius);
+  padding: 2rem; }
+
 .ratings li {
-  background: var(--color-neutral-200); }
+  color: var(--color-primary-700);
+  background: var(--color-neutral-200);
+  font-weight: 800;
+  padding: .5rem;
+  border-radius: var(--border-radius); }
+  .ratings li::before {
+    content: '';
+    width: 100px;
+    margin: 0 auto;
+    height: 1rem;
+    display: block;
+    background-image: url(../images/icon-star.svg);
+    margin-bottom: .5rem;
+    background-repeat: space; }
