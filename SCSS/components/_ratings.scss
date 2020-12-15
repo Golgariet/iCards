@@ -1,11 +1,13 @@
 .ratings {
-    li {
+    > li {
         color: var(--color-primary-700);
         background: var(--color-neutral-200);
-        //background: red;
         font-weight: 800;
-        padding: .5rem;
+        padding: .75rem 2rem;
         border-radius: var(--border-radius);
+        max-width: 25rem;
+        margin-left: auto;
+        margin-right: auto;
 
         &::before {
             content: '';
@@ -16,6 +18,15 @@
             background-image: url(../images/icon-star.svg);
             margin-bottom: .5rem;
             background-repeat: space;
+        }
+
+        @media (min-width: 50em) {
+            display: flex;
+            align-content: center;
+
+            &::before {
+                margin: 0 1.5rem 0 0;
+            }
         }
     }
 

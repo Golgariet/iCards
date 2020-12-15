@@ -11,10 +11,14 @@ h1 {
     color: var(--color-primary-700);
     line-height: 1;
     max-width: 12ch;
-    margin-left: auto;
-    margin-right: auto;
+
     margin-bottom: 1em;
     font-weight: 800;
+
+    @media (max-width: 50em) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .lead {
@@ -24,12 +28,17 @@ h1 {
 // layout
 
 main {
+    display: grid;
+    gap: 3rem 1rem;
 
-    @media(min-width: 50em) {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
+}
+
+@media(min-width: 50em) {
+    main {
+    grid-template-columns: 1fr 1.5fr;
+    text-align: left;
+
     }
-
 }
 
 .intro {
@@ -39,6 +48,7 @@ main {
 
 .ratngs {
     grid-column: 2 / 3; 
+    align-self: center;
     
 }
 
