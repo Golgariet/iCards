@@ -20,3 +20,29 @@ h1 {
 .lead {
     font-size: var(--fs-base-500);
 }
+
+// layout
+
+main {
+
+    @media(min-width: 50em) {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+.intro {
+    grid-column: 1 / 2; 
+
+}
+
+.ratngs {
+    grid-column: 2 / 3; 
+    
+}
+
+.quotes {
+    grid-column: 1 / -1; 
+    
+}

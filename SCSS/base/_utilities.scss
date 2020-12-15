@@ -10,6 +10,11 @@
 
 .split {
     display: flex;
+    flex-direction: column;
+    gap: 1em;
+    @media (min-width: 50em) {
+        flex-direction: row;
+    }
 }
 
 .center {
