@@ -104,12 +104,32 @@ h1 {
 .flow-content > * + * {
   margin-top: var(--flow-space, 1rem); }
 
-.quotes blockquote {
-  background: var(--color-primary-700);
-  color: var(--color-neutral-200);
-  text-align: left;
-  border-radius: var(--border-radius);
-  padding: 2rem; }
+.split {
+  display: flex; }
+
+.center {
+  align-items: center; }
+
+.quotes {
+  --space-rad: 2rem; }
+  .quotes blockquote {
+    background: var(--color-primary-700);
+    color: var(--color-neutral-200);
+    text-align: left;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    max-width: 25rem;
+    margin: 0 auto; }
+  .quotes img {
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: var(--space-rad); }
+  .quotes__name {
+    font-weight: 800; }
+  .quotes__stat {
+    color: var(--color-primary-300); }
+  .quotes__q {
+    margin-top: var(--space-rad); }
 
 .ratings li {
   color: var(--color-primary-700);
