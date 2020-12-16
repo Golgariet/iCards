@@ -1,5 +1,6 @@
 .ratings {
-    > li {
+    line-height: 1;
+     li {
         color: var(--color-primary-700);
         background: var(--color-neutral-200);
         font-weight: 800;
@@ -9,20 +10,9 @@
         margin-left: auto;
         margin-right: auto;
 
-        &::before {
-            content: '';
-            width: 100px;
-            margin: 0 auto;
-            height: 1rem;
-            display: block;
-            background-image: url(../images/icon-star.svg);
-            margin-bottom: .5rem;
-            background-repeat: space;
-        }
-
         @media (min-width: 50em) {
             display: flex;
-            align-content: center;
+            align-items: center;
 
             &::before {
                 margin: 0 1.5rem 0 0;
@@ -38,4 +28,19 @@
         }
     }
 
+    img {
+        //display: inline-block;
+        margin: 0 .5rem .5rem;
+
+        @media (min-width: 50em) {
+            margin: .5rem;
+            margin: -.25rem .5rem 0 0;
+        }
+    }
+
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
 }
