@@ -27,6 +27,14 @@
             &::before {
                 margin: 0 1.5rem 0 0;
             }
+
+            &:first-of-type {
+                transform: translateX(-3rem);
+            }
+
+            &:last-of-type {
+                transform: translateX(3rem);
+            }
         }
     }
 
